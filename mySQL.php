@@ -15,5 +15,20 @@ if ($con->connect_error) {
 
 }
 
+// Creating database
+
+$sql = "CREATE DATABASE firstDatabase";
+
+if ($con->query($sql) === TRUE) {
+  
+  echo "Database was successfully created!";
+
+} else {
+  
+  echo "Error creating your Database!: " . $con->error;
+
+}
+
+
 
 ?>
